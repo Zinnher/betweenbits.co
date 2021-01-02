@@ -1,0 +1,20 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0%;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+
+body {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  color: #4d4e53;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #ffffff;
