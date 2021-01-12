@@ -1,9 +1,10 @@
 :root {
-  --text-color: #556270; /*RGB 85,98,112 */
-  --primary-color: #C7F464; /*RGB 199,244,100  */
-  --second-color: #4ECDC4; /*RGB 78,205,196 */
-  --third-color: #FF6B6B; /*RGB 255,107,107*/
-  --fourth-color: #C44D58; /*RGB 196,77,88 */
+  --text-color: #F6D86B; /*RGB 246,216,107 */
+  --primary-color: #A70267; /*RGB 167,2,103  */
+  --second-color: #339194; /*RGB 51,145,148 */
+  --third-color: #FB6B41; /*RGB 251,107,65*/
+  --fourth-color: #F10C49; /*RGB 241,12,73 */
+  --font: 1.8rem;
 }
 
 * {
@@ -19,10 +20,13 @@ html {
 
 header {
   width: 100vw;
-  height: 10vh;
+  height: 15vh;
   background-color: var(--primary-color);
 }
 
+main {
+  width: 100vw;
+}
 
 .nav-header {
   display: flex;
@@ -46,28 +50,25 @@ header {
 .article-h2 {
   padding: .1rem;
   text-align: center;
-  color: var(--primary-color);
-  background-color: var(--fourth-color);
+  color: var(--text-color);
+  background-color: var(--third-color);
 }
 
 .article-h3 {
-  padding: .1rem;
   text-align: center;
-  color: var(--primary-color);
-  background-color: var(--fourth-color);
+  color: var(--text-color);
+  background-color: var(--third-color);
 }
 .section-about {
-  width: 100vw;
   background-color: var(--second-color);
 }
 
 .section-blog {
-  width: 100vw;
+  display: flex;
   background-color: var(--second-color);
 }
 
 .section-rrss {
-  width: 100vw;
   background-color: var(--second-color);
 }
 
@@ -76,16 +77,26 @@ header {
 }
 
 .section-blog .article-blog{
+  height: 5rem;
+  flex-basis: 5rem;
+  flex-grow: 1;
   padding: .1rem;
+  flex-wrap: wrap;
 }
+
+span {
+  color: whitesmoke;
+}
+
 
 footer {
   width: 100vw;
-  height: 10vh;
+  height: 15vh;
   padding-top: .1rem;
-  background-color: var(--third-color);
+  background-color: var(--fourth-color);
   display: flex;
   justify-content: center;
+  position: sticky;
 }
 
 .footer-ul {
