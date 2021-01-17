@@ -82,7 +82,9 @@ main .main-left section {
 
 main .main-center section {
   width: auto;
-  background-color: #A70267;
+  background-color: #339194;
+  border-left: 1px solid #F6D86B;
+  border-right: 1px solid #F6D86B;
 }
 
 .main-center section article p {
