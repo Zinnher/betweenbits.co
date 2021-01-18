@@ -1,9 +1,8 @@
 :root {
-  --text-color: #F6D86B; /*RGB 246,216,107 */
-  --primary-color: #A70267; /*RGB 167,2,103  */
-  --second-color: #339194; /*RGB 51,145,148 */
-  --third-color: #FB6B41; /*RGB 251,107,65*/
-  --fourth-color: #F10C49; /*RGB 241,12,73 */
+  --text-color: #FFFFFF; 
+  --primary-color: #01A78A; 
+  --second-color: #A62F43; 
+  --third-color: #110E13; 
   --font: 1.8rem;
 }
 
@@ -18,10 +17,13 @@ html {
   font-family: 'Roboto', 'Lato', sans-serif;
 }
 
+main {
+  background-color: red;
+}
+
 header {
   width: 100%;
   height: 40px;
-  border-bottom: 1px solid #F6D86B;
   background-color: var(--primary-color);
 }
 
@@ -45,51 +47,44 @@ nav .nav-right-section a {
   justify-content: center;
   align-items: center;
   font-size: 1.4rem;
-  color: #F6D86B;
+  color: var(--text-color);
   text-decoration: none;
 }
 
-main {
+.nav-right-section a:hover{
+  color: var(--second-color);
+}
+/* Design Post Inicio */
+
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+.fakeimg {
+  background-color: #aaa;
   width: 100%;
-  height: auto;
-  
+  padding: 20px;
 }
-
-main .block-one {
-  width: 100%;
-  height: 17rem;
-  justify-content: center;
-  align-items: center;
-  border-top: 1px solid #F6D86B;
-  background-color: #A70267;
-  display: flex;
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
 }
-
-.block-one, .block-two h3 {
-  color: #FB6B41;
+main .row {
+  background-color: #A62F43;
 }
+/* Design Post Inicio */
 
-main .block-two {
-  width: 100%;
-  height: 17rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-top: 1px solid #F10C49;
-  background-color: #F6D86B;
-}
 
-footer {
+.footer-pie {
   width: 100vw;
   height: 4rem;
-  position: absolute;
-  bottom: 0;
+  bottom: 0;;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 1.3rem;
-  background-color: #A70267;
-  border-top: 0.1rem solid #F6D86B;
+  background-color: var(--primary-color);
 }
 
 .footer-ul {
@@ -103,7 +98,11 @@ footer {
 
 footer .footer-li a {
   text-decoration: none;
-  color: #F6D86B;
+  color: var(--text-color);
   cursor: pointer;
+  font-size: 1.4rem;
 }
 
+.footer-li a:hover {
+  color: var(--second-color);
+}
