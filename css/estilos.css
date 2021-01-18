@@ -1,9 +1,8 @@
 :root {
-  --text-color: #F6D86B; /*RGB 246,216,107 */
-  --primary-color: #A70267; /*RGB 167,2,103  */
-  --second-color: #339194; /*RGB 51,145,148 */
-  --third-color: #FB6B41; /*RGB 251,107,65*/
-  --fourth-color: #F10C49; /*RGB 241,12,73 */
+  --text-color: #FFFFFF; 
+  --primary-color: #01A78A; 
+  --second-color: #A62F43; 
+  --third-color: #110E13; 
   --font: 1.8rem;
 }
 
@@ -21,7 +20,6 @@ html {
 header {
   width: 100%;
   height: 40px;
-  border-bottom: 1px solid #F6D86B;
   background-color: var(--primary-color);
 }
 
@@ -45,96 +43,158 @@ nav .nav-right-section a {
   justify-content: center;
   align-items: center;
   font-size: 1.4rem;
-  color: #F6D86B;
+  color: var(--text-color);
   text-decoration: none;
 }
 
-main {
-  width: 100%;
-  height: auto;
+.nav-right-section a:hover{
+  color: var(--second-color);
+}
+
+main .main-first-block {
+  width: 80%;
+  height: 15rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color:var(--second-color);
   
 }
 
-main .main-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+main .first-block-container {
+  width: 70%;
+  margin-left: 40px;
 }
 
-main h2 a {
+.first-block-container h2 {
+  color: var(--text-color);
+  text-align: center;
+  width: auto;
+  height: auto;
+}
+
+main .first-block-container p {
+  color: var(--text-color);
+  text-align: justify;
+  width: fit-content;
+  height: fit-content;
+}
+
+main .first-block-img {
+  background-image: url('https://img.unocero.com/2018/12/DvZ6McjVsAEBbS5-e1546318028207.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 30rem;
+  height: 10rem;
+  margin-top: 2rem;
+}
+
+main .two-blocks-one {
+  width: 100%;
+  height: 10%;
+  background-color: var(--primary-color);
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #F6D86B;
+  color: var(--text-color);
+}
+
+.two-blocks-one .two-block-blog {
+  margin-right: 5rem;
+}
+
+.two-blocks-one .two-block-blog a {
   text-decoration: none;
-  background-color: #A70267;
-  border-bottom: 1px solid #F6D86B;
-  border-left: 1px solid #F6D86B;
 }
 
-main .main-left section {
-  background-color: #FB6B41;
-  width: auto;
-}
-
-.main-left section article p {
-  color: whitesmoke;
-}
-
-main .main-center section {
-  width: auto;
-  background-color: #339194;
-  border-left: 1px solid #F6D86B;
-  border-right: 1px solid #F6D86B;
-}
-
-.main-center section article p {
-  color: whitesmoke;
-}
-
-main .main-right section {
-  width: auto;
-  background-color: #F10C49;
-}
-
-.main-right section article p {
-  color: whitesmoke;
-}
-
-main .block-one {
-  width: 100%;
+/*Contacto Inicia */
+main .main-contacto-block {
+  width: 80%;
   height: 15rem;
-  justify-content: center;
-  align-items: center;
-  border-top: 1px solid #F6D86B;
-  background-color: #A70267;
-  display: flex;
-}
-
-.block-one, .block-two h3 {
-  color: #FB6B41;
-}
-
-main .block-two {
-  width: 100%;
-  height: 15rem;
+  margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-top: 1px solid #F10C49;
-  background-color: #F6D86B;
+  background-color:var(--second-color); 
 }
 
-footer {
+main .contacto-block-container {
+  width: 70%;
+  margin-left: 40px;
+}
+
+.contacto-block-container h2 {
+  color: var(--text-color);
+  text-align: center;
+  width: auto;
+  height: auto;
+}
+
+main .contacto-block-container p {
+  color: var(--text-color);
+  text-align: justify;
+  width: fit-content;
+  height: fit-content;
+}
+
+main .contacto-block-img {
+  background-image: url('https://www.techgames.com.mx/wp-content/uploads/2020/09/Pokemon-Cafe-Mix-Snorlax.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 30rem;
+  height: 10rem;
+  margin-top: 2rem;
+}
+
+article .contacto-ul-container {
+  width: 25rem;
+  height: 10rem;
+  display: flex;
+  margin-left: 12rem;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+
+.contacto-block-container .contacto-ul-container li {
+  margin: 1rem 1rem 0 2rem;
+}
+
+.contacto-block-container ul {
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.contacto-block-container ul li a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.contacto-block-container ul li a:hover {
+  color: var(--primary-color);
+}
+
+article .contacto-ul-container a img {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 15%;
+}
+
+/*Contacto Termina */
+
+.footer-pie {
   width: 100vw;
   height: 4rem;
-  position: absolute;
-  bottom: 0;
+  bottom: 0;;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 1.3rem;
-  background-color: #A70267;
-  border-top: 0.1rem solid #F6D86B;
+  background-color: var(--primary-color);
 }
 
 .footer-ul {
@@ -148,7 +208,10 @@ footer {
 
 footer .footer-li a {
   text-decoration: none;
-  color: #F6D86B;
+  color: var(--text-color);
   cursor: pointer;
 }
 
+.footer-li a:hover {
+  color: var(--second-color);
+}
