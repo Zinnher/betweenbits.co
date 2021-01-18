@@ -18,7 +18,8 @@ html {
 }
 
 main {
-  background-color: red;
+  background-color: var(--second-color);
+
 }
 
 header {
@@ -56,30 +57,54 @@ nav .nav-right-section a {
 }
 /* Design Post Inicio */
 
+/* Create two unequal columns that floats next to each other */
+/* Left column */
 .leftcolumn {   
   float: left;
   width: 75%;
 }
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+/* Fake image */
 .fakeimg {
   background-color: #aaa;
   width: 100%;
   padding: 20px;
 }
+
+/* Add a card effect for articles */
 .card {
   background-color: white;
   padding: 20px;
+  margin: 20px 0 15px 10px;
+}
+
+.card-right {
+  padding: 20px;
   margin-top: 20px;
+  background-color:var(--primary-color);
+  color: var(--text-color);
 }
-main .row {
-  background-color: #A62F43;
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
-/* Design Post Inicio */
+/* Design Post Iermina */
 
 
 .footer-pie {
   width: 100vw;
   height: 4rem;
-  bottom: 0;;
+  bottom: 0;
   display: flex;
   align-items: center;
   justify-content: center;
