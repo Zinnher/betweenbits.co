@@ -38,17 +38,7 @@ header div a {
   text-align: center;
   font-size: 1.2rem;
   font-weight: bold;
-}
-
-header div a span {
-  display: inline-block;
-  width: 10px;
-  height: 10px;
-  margin-left: 10px;
-  background-image: url('../iconos/menu.svg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  color: black;
 }
 
 main {
@@ -178,4 +168,71 @@ main section img {
   font-weight: 500;
   line-height: 1.8rem;
   color: #808080;
+}
+
+.product-detail--card--rrss {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  margin: 15px auto;
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
+}
+
+.product-detail--card--rrss div {
+  display: flex;
+  justify-self: center;
+  margin: 0 auto;
+  padding:  10px 0 10px 30%;
+}
+
+
+.product-detail--card--rrss div .github {
+  width: 30px;
+  height: 30px;
+  margin-right: 40px;
+  background-image: url('../iconos/github.svg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.product-detail--card--rrss div .instagram {
+  width: 30px;
+  height: 30px;
+  margin-right: 40px;
+  background-image: url('../iconos/IG.svg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.product-detail--card--rrss div .linkedin {
+  width: 30px;
+  height: 30px;
+  margin-right: 40px;
+  background-image: url('../iconos/linkedin.svg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.product-detail--card--rrss div .twitter {
+  width: 30px;
+  height: 30px;
+  margin-right: 40px;
+  background-image: url('../iconos/twitter.svg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.product-detail--card--rrss div a {
+  text-decoration: none;
+  font-size: 1.4rem;
+  font-weight: bold;
+  line-height: 1.4rem;
+  color: black;
 }
