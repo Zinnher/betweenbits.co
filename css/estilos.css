@@ -82,7 +82,7 @@ main section img {
   padding: 40px;
   border-radius: 5px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
-  background-image: url('./imagnes/anas-alshanti-feXpdV001o4-unsplash.jpg');
+  background-image: url('../imagnes/anas-alshanti-feXpdV001o4-unsplash.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -124,7 +124,7 @@ main section img {
   height: 40px;
   border-radius: 300px;
   margin-bottom: 10px;
-  background-image: url(./imagnes/Zinner.jpg);
+  background-image: url(../imagnes/Zinner.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
