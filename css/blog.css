@@ -18,42 +18,43 @@ html {
 }
 
 main {
-  background-color: var(--second-color);
+  background-color: #c7c2c2;
 
 }
 
 header {
   width: 100%;
-  height: 40px;
-  background-color: var(--primary-color);
+  padding:10px;
+  display: flex;
+  justify-content: space-around;
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow: 0 0 4px 0  rgba(194, 188, 172, 0.16);
 }
 
-header nav {
+header div {
   display: flex;
-  justify-content: center;
 }
 
-header nav .nav-right-section {
-  width: 25rem;
-  height: auto;
-  display: flex;
-  list-style: none;
-  justify-content: center;
-  align-items: center;
+header div a {
+  margin: 0 auto;
+  padding: 5px;
 }
 
-nav .nav-right-section a {
-  margin: 1rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 1.4rem;
-  color: var(--text-color);
+header div a img {
+  width: 14px;
+  height: 16px;
+}
+
+header div a {
   text-decoration: none;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: black;
 }
 
-.nav-right-section a:hover{
-  color: var(--second-color);
+header div a:hover{
+  color: whitesmoke;
 }
 /* Design Post Inicio */
 
@@ -71,26 +72,32 @@ nav .nav-right-section a {
   padding-left: 20px;
 }
 
-/* Fake image */
+/* Fake image
 .fakeimg {
   background-color: #aaa;
   width: 100%;
   padding: 20px;
-}
+} */
 
 /* Add a card effect for articles */
 .card {
   background-color: white;
   padding: 20px;
   margin: 20px 0 15px 10px;
+  border-radius: 1%;
 }
 
 .card-right {
   padding: 20px;
   margin-top: 20px;
   margin-right: 20px;
-  background-color:var(--primary-color);
+  margin-bottom: 20px;
+  border-radius: 3%;
   color: var(--text-color);
+  background-image: url('../imagnes/anas-alshanti-feXpdV001o4-unsplash.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 /* Clear floats after the columns */
@@ -99,7 +106,75 @@ nav .nav-right-section a {
   display: table;
   clear: both;
 }
-/* Design Post Iermina */
+/* Design Post Termina */
+
+.card-right .card--intro--descrip {
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.2rem;
+  text-align: center;
+  margin-bottom: 10px;
+  color: whitesmoke;
+}
+
+.card-right .product--card-title {
+  font-size: 1.6rem;
+  font-weight: bold;
+  line-height: 1.8rem;
+  text-align: center;
+  margin-bottom: 10px;
+  color: whitesmoke;
+}
+
+.card-right-follow {
+  padding: 20px;
+  margin-top: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  border-radius: 3%;
+  color: var(--text-color);
+  background-image: url('../imagnes/pexels-pixabay-158826.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.card-right-follow ul {
+  padding: 30px;
+}
+
+.card-right-follow h3 {
+  font-size: 1.6rem;
+  font-weight: bold;
+  line-height: 1.8rem;
+  padding-left: 13%;
+  margin-bottom: 10px;
+  color: whitesmoke;
+}
+
+.card-right-follow ul li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+.card-right-follow ul li img {
+  width: 25px;
+  height: 25px;
+  margin-right: 35px;
+}
+
+.card-right-follow ul li a {
+  display: flex;
+  align-items: center;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.4rem;
+  text-decoration: none;
+  color: white;
+}
+
+
+
 
 
 .footer-pie {
