@@ -1,3 +1,11 @@
+:root {
+  
+  --primary-color: #0f3057; 
+  --second-color: #00587a; 
+  --third-color: #008891; 
+  --text-color: #e7e7de; 
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -7,7 +15,8 @@
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
-  background-color: #f5f2f1;
+  background-image: linear-gradient( 
+rgba(0, 136, 145, 0.7 ), rgba(0, 88, 122, 0.8 )), url(../imagnes/nintendo_mario_bg_1_private.png);
 }
 
 header {
@@ -15,8 +24,18 @@ header {
   padding:10px;
   display: flex;
   justify-content: space-around;
-  background-color: rgba(255, 255, 255, 1);
+  min-width: 400px;
+  background-color: rgba(0, 88, 122, 1);
   box-shadow: 0 0 4px 0  rgba(194, 188, 172, 0.16);
+}
+
+header .logo {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--text-color);
 }
 
 header div {
@@ -28,45 +47,135 @@ header div a {
   padding: 5px;
 }
 
-header div a img {
-  width: 14px;
-  height: 16px;
-}
-
 header div a {
   text-decoration: none;
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 2rem;
   font-weight: bold;
-  color: black;
+  color: var(--text-color);
 }
 
 main {
   width: 100%;
   margin: 0 auto;
   height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} 
+
+
+/* 
+.main-direction {
+  
+} */
+
+row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
-main section {
-  margin: 0 auto;
-  max-width: 320px;
-  margin: 0 auto;
+.leftcolumn {
+  float: left;
 }
 
-main section img {
-  width: 100%;
-  height: 100px;
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
 }
+
+
 .main-product-detail {
   width: 100%;
-  max-width: 320px;
+  max-width: 700px;
   height: auto;
-  background-color: whitesmoke;
+  background-color: transparent;
+}
+
+.main-product-detail-side {
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+}
+
+.product-detail--card {
+  width: 100%;
+  /* max-width: 400px; */
+  height: auto;
+  margin: 30px auto;
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
+  background: white;
+}
+
+.product-detail--card .perfil {
+  display: inline-block;
+  width: 80px;
+  height: 70px;
+  border-radius: 300px;
+  background-image: url(../imagnes/Zinner.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.product--card-title {
+  font-size: 1.4rem;
+  font-weight: bold;
+  line-height: 1.4rem;
+  margin-top: 15px;
+  color: black;
+}
+
+.product--card-name {
+  margin-bottom: 10px;
+  font-size: 1.8rem;
+  font-weight: bold;
+  line-height: 1.8rem;
+  color: black;
+}
+
+.product--card-body {
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+  color: black;
+}
+
+.product-detail--card .article-img {
+  display: inline-block;
+  width: 100%;
+  height: 400px;
+  margin-bottom: 10px;
+  background-image: url(../imagnes/pexels-mike-esparza-3702458.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.product--card-name-title {
+  margin-bottom: 5px;
+  font-size: 2.2rem;
+  font-weight: bold;
+  line-height: 1.8rem;
+  color: black;
+}
+
+.product--card-body-foot {
+  margin-bottom: 5px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+  color: black;
 }
 
 .product-detail--card--intro {
   width: 100%;
-  max-width: 400px;
+  max-width: 350px;
   height: 170px;
   margin: 15px auto;
   padding: 40px;
@@ -84,7 +193,7 @@ main section img {
   line-height: 1.4rem;
   text-align: center;
   margin-bottom: 10px;
-  color: whitesmoke;
+  color: var(--text-color);
 }
 
 .product-detail--card--intro .product--card-title {
@@ -92,82 +201,8 @@ main section img {
   font-weight: bold;
   line-height: 1.8rem;
   text-align: center;
-  margin-bottom: 10px;
-  color: whitesmoke;
-}
-
-.product-detail--card {
-  width: 100%;
-  max-width: 400px;
-  height: auto;
-  margin: 15px auto;
-  padding: 10px;
-  text-align: center;
-  border-radius: 5px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
-}
-
-.product-detail--card .eye {
-  display: inline-block;
-  width: 40px;
-  height: 40px;
-  border-radius: 300px;
-  margin-bottom: 10px;
-  background-image: url(../imagnes/Zinner.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.product--card-title {
-  font-size: 1.4rem;
-  font-weight: bold;
-  line-height: 1.4rem;
-  margin-top: 15px;
-  color: #808080;
-}
-
-.product--card-name {
-  margin-bottom: 10px;
-  font-size: 1.8rem;
-  font-weight: bold;
-  line-height: 1.8rem;
-  color: black;
-}
-
-.product--card-body {
-  font-size: 1.4rem;
-  font-weight: 500;
-  line-height: 1.8rem;
-  color: #808080;
-}
-
-.product-detail--card .article-img {
-  display: inline-block;
-  width: 100%;
-  height: 30%;
-  margin-bottom: 10px;
-  background-image: url(../imagnes/pexels-mike-esparza-3702458.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.product--card-name-title {
-  margin-bottom: 10px;
-  padding: 10px;
-  font-size: 2.2rem;
-  font-weight: bold;
-  line-height: 1.8rem;
-  color: black;
-}
-
-.product--card-body-foot {
-  margin-bottom: 5px;
-  font-size: 1.2rem;
-  font-weight: 500;
-  line-height: 1.8rem;
-  color: #808080;
+  margin-bottom: 20px;
+  color: var(--text-color);
 }
 
 .product-detail--card--rrss {
@@ -179,6 +214,7 @@ main section img {
   text-align: center;
   border-radius: 5px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
+  background-color: white;
 }
 
 .product-detail--card--rrss div {
@@ -235,4 +271,38 @@ main section img {
   font-weight: bold;
   line-height: 1.4rem;
   color: black;
+}
+
+.footer {
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 88, 122, 1);
+  display: flex;
+  height: 100px;
+  width: 100%;
+}
+
+.footer a {
+  color: white;
+  cursor: pointer;
+  font-size: 2rem;
+  padding-left: 30px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
+
+  .footer {
+    align-items: flex-start;
+    flex-direction: column;
+  }
 }
